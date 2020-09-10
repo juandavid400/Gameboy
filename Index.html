@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameBoy Color</title>
+    <link rel="stylesheet" href="./css/Main.css">
+    <script src="src/AudioPlayer.js"></script>
+    <script src="https://kit.fontawesome.com/5cc5891cdd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="Contenedor">
+        
+        <div class="gameboy">
+        
+            <div class="bordepantalla">                
+                <div class="pantalla">
+                    
+                    <div id="player" class="player" data-src="./assets/songs/1.mp3">
+                        <div class="cover">
+                            <div class="progress"></div>
+                            <img id="imagenes" src="./assets/covers/1.jpg"  alt="">
+                        </div>
+                            <div class="controls">
+                                <div class="btn playBtn"><i class="fas fa-play"></i></div>                                
+                                <div id = "mute" class="btn muteBtn" onclick="Click()"><i class="fas fa-volume-mute"></i></div>
+                                <div class="arriba"></div>
+                                <div class="abajo"></div>
+                                <div class="izquierda"><i class="fas fa-backward"></i></div>
+                                <div class="derecha"><i class="fas fa-forward"></i></div>                                                    
+                                <div class="LessVolume"></div>  
+                                <div class="MoreVolume"></div> 
+
+                                <!-- <div class="volume-slider-con">
+                                    <div class="volume-slider"></div>
+                                </div> -->
+                                <div class="InicialTime">0:00</div>
+                                <div class="FinalTime">3:53</div>
+                                <div class="hp_slide">
+                                    <div class="hp_range"></div>
+                               </div>
+                            </div>
+                             
+                    </div>
+
+                </div>
+                <div class="encendido"></div>
+                <div class="power">Power</div>
+                <div class="nombre">GAME BOY COLOR</div>
+                
+            </div>
+            
+
+            <div class="bordenintendo"></div>
+            <div class="Nintendo">Nintendo</div>
+            <div class="circulotapar"></div>
+            <div class="textoLessVolume"><i class="fas fa-minus fa-2x"></i></div>
+            <div class="textoMoreVolume"><i class="fas fa-plus  fa-2x"></i></div>
+            <div class="sonido1"></div>
+            <div class="sonido2"></div>
+            <div class="sonido3"></div>
+            <div class="sonido4"></div>
+            <div class="sonido5"></div>
+            <div class="sonido6"></div>
+            <div class="sonido7"></div>
+            <div class="sonido8"></div>
+            <div class="sonido9"></div>
+            <div class="sonido10"></div>
+            <div class="sonido11"></div>
+            <div class="sonido12"></div>
+            <div class="sonido13"></div>
+            
+            <!-- <div class="sombracuerpo"></div> -->
+
+
+        </div>        
+      
+    </div>
+    <script>
+        function Click() {
+            document.getElementById("mute").style.background.color = "red";
+        }
+    </script>
+    <script src="src/main.js"></script>
+</body>
+</html>
